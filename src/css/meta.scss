@@ -1,0 +1,12 @@
+.meta_list {
+  margin-top:32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  li {
+    list-style: none;
+    background-color: #fff;
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
+}

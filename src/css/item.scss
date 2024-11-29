@@ -1,0 +1,64 @@
+.item_edit {
+  dl {
+    dt {
+      font-weight: bold;
+      margin: 32px 0 16px;
+    }
+  }
+  label {
+    cursor: pointer;
+  }
+  input[type="text"] {
+    width: 100%;
+    max-width: 480px;
+  }
+  input[type="date"] {
+    width: 140px;
+  }
+
+  input[type="radio"], input[type="checkbox"] {
+    appearance: auto;
+  }
+  .status_item {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+    div {
+      display: flex;
+      column-gap: 8px;
+      align-items: center;
+      width: 100px;
+    }
+
+  }
+  .tag_item {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+    div {
+      display: flex;
+      column-gap: 4px;
+      align-items: center;
+    }
+  }
+  .image_edit {
+    .upload {
+      cursor: pointer;
+    }
+    .image {
+      width: 100%;
+      max-width: 400px;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+    svg {
+      font-size: 40px;
+    }
+    input {
+      display: none;
+    }
+  }
+}

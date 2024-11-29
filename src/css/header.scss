@@ -1,0 +1,40 @@
+header {
+  position: fixed;
+  top:0;
+  left:0;
+  background-color: #eedcb3;
+  width: 100%;
+  padding: 16px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  svg {
+    font-size: 36px;
+  }
+
+  a {
+    h1 {
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      column-gap: 16px;
+    }
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    li {
+      list-style: none;
+      cursor: pointer;
+      &:last-child {
+        @media screen and (min-width: 640px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
