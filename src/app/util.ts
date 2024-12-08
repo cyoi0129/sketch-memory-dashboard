@@ -1,9 +1,4 @@
-export const API_BASE = process.env.NODE_ENV === "development" ? "http://localhost:8080/query" : import.meta.env.API_BASE;
-
-export const FIREBASE_CONFIG = {
-  apiKey: import.meta.env.API_KEY,
-  storageBucket: import.meta.env.STORAGE_BUCKET,
-};
+export const API_BASE = process.env.NODE_ENV === "development" ? "http://localhost:8080/query" : import.meta.env.VITE_API_BASE;
 
 export const INIT_AUTHOR: AuthorDataType = {
   name: "",

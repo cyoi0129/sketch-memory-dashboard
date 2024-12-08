@@ -3,8 +3,12 @@ import 'firebase/compat/auth';
 import { getAuth } from "firebase/auth";
 import 'firebase/compat/database';
 import 'firebase/compat/storage';
-import { FIREBASE_CONFIG } from './util';
 import Cookies from 'js-cookie';
+
+const FIREBASE_CONFIG = {
+  apiKey: import.meta.env.VITE_API_KEY,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+}
 
 const firebaseApp = firebase.initializeApp(FIREBASE_CONFIG);
 const auth = firebase.auth(firebaseApp);
