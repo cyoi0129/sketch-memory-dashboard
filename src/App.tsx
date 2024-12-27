@@ -12,7 +12,7 @@ const App: FC = () => {
   useEffect(() => {
     if (!Cookies.get('user')) {
       setIsLogin(false);
-      navigate("/");
+      // navigate("/");
     } else {
       setIsLogin(true);
     }
