@@ -1,12 +1,12 @@
 import { FC, useEffect, useState } from 'react';
-import { Route, Routes, useNavigate, useLocation } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import { Header, Footer, ScrollToTop } from './components';
 import { Home, List, Item, Author, Tag } from './pages';
 import './css/common.scss';
 import Cookies from 'js-cookie';
 
 const App: FC = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [isLogin, setIsLogin] = useState<boolean>(false);
   const location = useLocation();
   useEffect(() => {
