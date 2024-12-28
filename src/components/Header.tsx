@@ -24,7 +24,7 @@ const Header: FC = () => {
    * @param login 
    */
   const loginProcess = (login: boolean): void => {
-    if(login) setIsLogin(true);
+    if (login) setIsLogin(true);
     setShowLogin(false);
   }
   return (
@@ -36,7 +36,7 @@ const Header: FC = () => {
           <li onClick={() => setIsShowMenu(!isShowMenu)}>{isShowMenu ? <IoCloseOutline /> : <IoMenuOutline />}</li>
         </ul>
       </header>
-      <Menu show={isShowMenu} />
+      <Menu show={isShowMenu} action={() => setIsShowMenu(false)} />
       {showLogin ? <Login action={loginProcess} /> : null}
     </>
   );

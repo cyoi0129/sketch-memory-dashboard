@@ -6,7 +6,8 @@
 	li {
 		list-style: none;
 		position: relative;
-		width: 200px;
+		max-width: 200px;
+		width: calc(50% - 16px);
 		.image {
 			width: 100%;
 			aspect-ratio: 1.42;

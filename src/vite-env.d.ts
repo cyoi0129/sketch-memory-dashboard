@@ -16,6 +16,7 @@ type OverlayProps = {
 
 type MenuProps = {
   show?: boolean;
+  action: () => void;
 }
 
 type LoginProps = {
